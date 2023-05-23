@@ -1,12 +1,12 @@
 package com.example.english_learning_app
 
+import android.app.AlertDialog
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-
 
 class SignupActivity : AppCompatActivity() {
     private lateinit var emailEditText: EditText
@@ -33,10 +33,9 @@ class SignupActivity : AppCompatActivity() {
         if (email.isNotEmpty() && password.isNotEmpty() && password2.isNotEmpty()) {
             if (validateEmail(email)) {
                 if (password == password2) {
-                    // registration new user
                     userManager.registerUser(email, password)
 
-                    val intent = Intent(this@SignupActivity, MainActivity::class.java)
+                    val intent = Intent(this@SignupActivity, MainDisplayActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {

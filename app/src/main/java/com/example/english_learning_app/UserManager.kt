@@ -11,7 +11,7 @@ class UserManager(context: Context) {
 
     private val sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
-    fun saveCredentials(username: String, password: String) {
+    fun registerUser(username: String, password: String) {
         sharedPreferences.edit().apply {
             putString(KEY_USERNAME, username)
             putString(KEY_PASSWORD, password)

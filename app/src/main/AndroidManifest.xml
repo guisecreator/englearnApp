@@ -21,7 +21,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SigninActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".MainDisplayActivity" />
         <activity android:name=".PatchActivity" />
         <activity android:name=".RecoveryActivity" />
