@@ -30,41 +30,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/button2"-->
-<!--        style="@style/MyButtonStyle"-->
-<!--        android:layout_width="329dp"-->
-<!--        android:layout_height="76dp"-->
-<!--        android:layout_marginBottom="32dp"-->
-<!--        android:background="@drawable/rounded_button"-->
-<!--        android:drawableStart="@drawable/person_white"-->
-<!--        android:onClick="sign_in"-->
-<!--        android:paddingStart="25dp"-->
-<!--        android:text="Войдите в аккаунт"-->
-<!--        android:textColor="@color/light_font"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/button"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/ImageView2"-->
-<!--        app:layout_constraintVertical_bias="1.0" />-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        style="@style/MyButtonStyle"
+        android:layout_width="329dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/person_white"
+        android:onClick="sign_in"
+        android:paddingStart="25dp"
+        android:textColor="@color/white"
+        android:text="Войти в аккаунт"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView2"
+        app:layout_constraintVertical_bias="1.0" />
 
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/button"-->
-<!--        style="@style/MyButtonStyle"-->
-<!--        android:layout_width="329dp"-->
-<!--        android:layout_height="76dp"-->
-<!--        android:layout_marginBottom="48dp"-->
-<!--        android:background="@drawable/rounded_button2"-->
-<!--        android:drawableStart="@drawable/person_white_with_plus"-->
-<!--        android:onClick="sign_up"-->
-<!--        android:drawablePadding="19dp"-->
-<!--        android:paddingStart="30dp"-->
-<!--        android:text="Зарегистрироваться"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/ImageView2"-->
-<!--        app:layout_constraintVertical_bias="1.0" />-->
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/MyButtonStyle"
+        android:layout_width="329dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/person_white_plus"
+        android:onClick="sign_up" android:textColor="@color/white"
+        android:drawablePadding="19dp"
+        android:paddingStart="30dp"
+        android:text="Зарегистрироваться"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView2"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 

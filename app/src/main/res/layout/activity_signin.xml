@@ -34,44 +34,44 @@
                 android:layout_width="251dp"
                 android:layout_height="310dp"
                 android:layout_marginTop="50dp"
-
+                android:src="@drawable/logo"
                 android:layout_gravity="center"
                 tools:layout_editor_absoluteX="102dp"
                 tools:layout_editor_absoluteY="97dp" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/loginText"-->
-<!--                android:layout_width="343dp"-->
-<!--                android:layout_height="75dp"-->
-<!--                android:layout_marginTop="48dp"-->
-<!--                android:background="@drawable/edittextstyle"-->
-<!--                android:drawableStart="@drawable/person_purple"-->
-<!--                android:drawablePadding="19dp"-->
-<!--                android:ems="10"-->
-<!--                android:hint="Логин"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:paddingStart="36dp"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/ImageView2" />-->
+            <EditText
+                android:id="@+id/loginText"
+                android:layout_width="343dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/edittextstyle2"
+                android:drawableStart="@drawable/person_white"
+                android:drawablePadding="19dp"
+                android:ems="10"
+                android:hint="Логин"
+                android:layout_gravity="center"
+                android:paddingStart="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ImageView2" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/passwordText"-->
-<!--                android:layout_width="343dp"-->
-<!--                android:layout_height="75dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:background="@drawable/edittextgreen"-->
-<!--                android:drawableStart="@drawable/key"-->
-<!--                android:drawablePadding="19dp"-->
-<!--                android:ems="10"-->
-<!--                android:inputType="textPassword"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:hint="Пароль"-->
-<!--                android:paddingStart="36dp"-->
-<!--                android:textColor="#FFFFFF"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/loginText" />-->
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="343dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextstyle2"
+                android:drawableStart="@drawable/key"
+                android:drawablePadding="19dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:hint="Пароль"
+                android:paddingStart="36dp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginText" />
 
 <!--            <androidx.appcompat.widget.AppCompatButton-->
 <!--                android:id="@+id/button"-->

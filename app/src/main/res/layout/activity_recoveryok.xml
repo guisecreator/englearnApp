@@ -63,6 +63,7 @@
         android:color="@color/white"
         android:radius="0dp"
         android:text="Вернуться"
+        android:textColor="@color/color_button_signin"
         android:onClick="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
