@@ -58,7 +58,6 @@
         android:id="@+id/button"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/button_color_white"
         android:background="@drawable/button_page_signin"
         android:color="@color/white"
         android:radius="0dp"

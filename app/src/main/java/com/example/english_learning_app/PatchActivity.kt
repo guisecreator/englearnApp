@@ -7,7 +7,7 @@ class PatchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_patch)
+        setContentView(R.layout.message_screen)
     }
 
 }

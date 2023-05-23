@@ -21,7 +21,7 @@ class RecoveryActivity : AppCompatActivity() {
         if (email.isNotEmpty()) {
             val isValidEmail = validateEmail(email)
             if (isValidEmail) {
-                val intent = Intent(this@RecoveryActivity, RecoveryOKActivity::class.java)
+                val intent = Intent(this@RecoveryActivity, RecoveryOkActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

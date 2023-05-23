@@ -16,7 +16,7 @@ class LoadingActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                val intent = Intent(this@LoadingActivity, SigninActivity::class.java)
+                val intent = Intent(this@LoadingActivity, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }
