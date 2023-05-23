@@ -1,37 +1,54 @@
 package com.example.english_learning_app
 
+import android.app.AlertDialog
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-
 class SigninActivity : AppCompatActivity() {
-    lateinit var Login:EditText
-    lateinit var Password:EditText
+    private lateinit var loginEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var userManager: UserManager
 
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
-        Login=findViewById(R.id.loginText)
-        Password=findViewById(R.id.passwordText)
+
+        loginEditText = findViewById(R.id.loginText)
+        passwordEditText = findViewById(R.id.passwordText)
+
+        // Создание экземпляра UserManager
+        userManager = UserManager(this)
     }
+
     fun next(view: View) {
-        if(Login.text.toString().isNotEmpty()&&Password.text.toString().isNotEmpty()) {
-            val intent = Intent(this@SigninActivity, PatchActivity::class.java)
-            startActivity(intent)
-            finish()
+        val enteredUsername = loginEditText.text.toString()
+        val enteredPassword = passwordEditText.text.toString()
+
+        if (enteredUsername.isNotEmpty() && enteredPassword.isNotEmpty()) {
+            if (userManager.checkCredentials(enteredUsername, enteredPassword)) {
+                val intent = Intent(this@SigninActivity, PatchActivity::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                val alert = AlertDialog.Builder(this)
+                    .setTitle("Доступ запрещен")
+                    .setPositiveButton("OK", null)
+                    .create()
+                    .show()
+            }
         } else {
-            val alert=AlertDialog.Builder(this)
+            val alert = AlertDialog.Builder(this)
                 .setTitle("Заполните текстовые поля")
                 .setPositiveButton("OK", null)
                 .create()
                 .show()
         }
     }
+
     fun next2(view: View) {
         val intent = Intent(this@SigninActivity, RecoveryActivity::class.java)
         startActivity(intent)
