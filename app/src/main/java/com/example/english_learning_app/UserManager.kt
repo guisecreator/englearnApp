@@ -2,7 +2,6 @@ package com.example.english_learning_app
 
 import android.content.Context
 
-
 class UserManager(context: Context) {
     companion object {
         private const val PREFS_NAME = "UserPrefs"
@@ -12,7 +11,7 @@ class UserManager(context: Context) {
 
     private val sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
-    fun registerUser(username: String, password: String) {
+    fun saveCredentials(username: String, password: String) {
         sharedPreferences.edit().apply {
             putString(KEY_USERNAME, username)
             putString(KEY_PASSWORD, password)
