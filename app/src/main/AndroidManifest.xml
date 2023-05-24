@@ -22,7 +22,7 @@
         </activity>
         <activity android:name=".SigninActivity" />
         <activity android:name=".MainDisplayActivity" />
-        <activity android:name=".PatchActivity" />
+        <activity android:name=".LessonActivity" />
         <activity android:name=".RecoveryActivity" />
         <activity android:name=".RecoveryOkActivity" />
         <activity android:name=".SignupActivity" />

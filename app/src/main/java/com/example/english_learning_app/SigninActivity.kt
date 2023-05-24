@@ -1,7 +1,6 @@
 package com.example.english_learning_app
 
 import android.app.AlertDialog
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -31,7 +30,7 @@ class SigninActivity : AppCompatActivity() {
 
         if (enteredUsername.isNotEmpty() && enteredPassword.isNotEmpty()) {
             if (userManager.checkCredentials(enteredUsername, enteredPassword)) {
-                val intent = Intent(this@SigninActivity, PatchActivity::class.java)
+                val intent = Intent(this@SigninActivity, LessonActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
