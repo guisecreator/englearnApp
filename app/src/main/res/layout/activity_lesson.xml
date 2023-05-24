@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="337dp" />
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="363dp" />
 
     <TextView
         android:id="@+id/message_text"

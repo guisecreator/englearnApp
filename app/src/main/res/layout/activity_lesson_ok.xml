@@ -6,6 +6,47 @@
     android:layout_height="match_parent"
     android:background="@color/main_color">
 
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="293dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioButton
+            android:id="@+id/option1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант ответа 1" />
+
+        <RadioButton
+            android:id="@+id/option2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант ответа 2" />
+
+        <RadioButton
+            android:id="@+id/option3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант ответа 3" />
+
+    </RadioGroup>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_lesson2"
         android:layout_width="157dp"
@@ -20,4 +61,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.834" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

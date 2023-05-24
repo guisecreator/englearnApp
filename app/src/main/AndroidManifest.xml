@@ -21,6 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SigninActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ResultActivity" />
         <activity android:name=".MainDisplayActivity" />
         <activity android:name=".LessonActivity" />
         <activity android:name=".RecoveryActivity" />
