@@ -8,9 +8,7 @@ class UserManager(context: Context) {
         private const val KEY_USERNAME = "username"
         private const val KEY_PASSWORD = "password"
     }
-
     private val sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-
     fun registerUser(username: String, password: String) {
         sharedPreferences.edit().apply {
             putString(KEY_USERNAME, username)
@@ -18,15 +16,12 @@ class UserManager(context: Context) {
             apply()
         }
     }
-
     fun getRegisteredUsername(): String {
         return sharedPreferences.getString(KEY_USERNAME, "") ?: ""
     }
-
     fun getRegisteredPassword(): String {
         return sharedPreferences.getString(KEY_PASSWORD, "") ?: ""
     }
-
     fun checkCredentials(username: String, password: String): Boolean {
         val registeredUsername = getRegisteredUsername()
         val registeredPassword = getRegisteredPassword()

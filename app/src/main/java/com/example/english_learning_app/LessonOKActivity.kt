@@ -46,6 +46,25 @@ class QuizActivity : AppCompatActivity() {
         listOf("won’t", "don’t", "are not"),
     )
 
+    private val correctAnswers = listOf(
+        "your",
+        "are they",
+        "there are",
+        "has got",
+        "works",
+        "He’s watching",
+        "listened to music",
+        "any",
+        "heavier",
+        "to fly",
+        "should",
+        "were you doing",
+        "ever met",
+        "be",
+        "am playing",
+        "don’t ",
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lesson_ok)
@@ -70,7 +89,6 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private fun checkAnswer() {
-        val currentAnswers = answers[currentQuestionIndex]
         val checkedOptionId = optionsRadioGroup.checkedRadioButtonId
         val checkedOptionIndex = when (checkedOptionId) {
             R.id.option1TextView -> 0
@@ -79,7 +97,7 @@ class QuizActivity : AppCompatActivity() {
             else -> -1
         }
 
-        if (checkedOptionIndex != -1 && currentAnswers[checkedOptionIndex] == "Верный ответ") {
+        if (checkedOptionIndex != -1 && answers[currentQuestionIndex][checkedOptionIndex] == correctAnswers[currentQuestionIndex]) {
             score++
         }
 
@@ -89,7 +107,6 @@ class QuizActivity : AppCompatActivity() {
         } else {
             val intent = Intent(this@QuizActivity, ResultActivity::class.java)
             intent.putExtra("score", score)
-            // Все вопросы пройдены, переход к экрану с результатами
             intent.putExtra("totalQuestions", questions.size)
             startActivity(intent)
             finish()

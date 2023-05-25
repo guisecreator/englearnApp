@@ -4,52 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="0dp"
+    android:orientation="vertical"
     android:background="@color/main_color">
 
-    <TextView
-        android:id="@+id/lessonTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="58dp" />
+    <!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="472dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Пройдите тест для закрепления выученного вами материала"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
-        android:id="@+id/lessonContent"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="363dp" />
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Выберите тему для изучения"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/message_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="243dp" />
+
+    <ListView
+        android:id="@+id/listViewTopics"
+        android:layout_width="302dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_lesson"
-        android:layout_width="157dp"
-        android:layout_height="43dp"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
         android:background="@drawable/button_page_signin"
         android:onClick="send"
         android:radius="0dp"
-        android:text="Далее"
+        android:text="Пройти тест по всем темам"
         android:textColor="@color/color_button_signin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.834" />
+        app:layout_constraintVertical_bias="0.852" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
