@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <TextView
+        android:id="@+id/selectedLinkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Глаголы"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Глагол – король английского языка. Даже самое короткое предложение всегда содержит глагол. И наоборот, из глагола можно составить предложение в одно слово, например «Stop!» («Остановись!»).
+
+Глаголы иногда называют «словами действия». Отчасти это правда. Многие глаголы передают идею действия, «делания» чего-то — к примеру «run» (бежать), «fight» (сражаться), «do» (делать), «work» (работать).
+
+Но некоторые глаголы имеют значение не действия, а существования, не «делания», а «бытия». Это такие глаголы, как «be» (быть), «exist» (существовать), «seem» (казаться), «belong» (принадлежать).
+
+К глаголу как сказуемому прилагается подлежащее. Так, в предложении «Mary speaks English» («Мэри говорит по-английски») Mary — подлежащее, а глагол speaks — сказуемое.
+
+Таким образом, можно сказать, что глаголы — это слова, которые объясняют, что субъект делает (does) или чем/каким является (is), и описывают:
+
+действие («John plays football» — «Джон играет в футбол»);
+состояние («Ashley seems kind» — «Эшли кажется доброй»)."
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

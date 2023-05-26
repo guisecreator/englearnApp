@@ -30,7 +30,8 @@ class QuizActivity : AppCompatActivity() {
 
     private val answers = listOf(
         listOf("he", "your", "she"),
-        listOf("are they", "is they", "there are a"),
+        listOf("are they", "is they", "there are"),
+        listOf("there is", "there are", "there are a"),
         listOf("have got", "has got", "got"),
         listOf("work", "works", "working"),
         listOf("He’s watching", "He watches", "He watching"),

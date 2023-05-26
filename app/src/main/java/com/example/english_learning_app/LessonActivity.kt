@@ -7,7 +7,6 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.ListView
-import android.widget.TextView
 
 class LessonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,7 @@ class LessonActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lesson)
 
         val linksListView: ListView = findViewById(R.id.listViewTopics)
-        val links = arrayOf("Местоимения", "Ссылка 2", "Ссылка 3")
+        val links = arrayOf("Местоимения", "Глаголы", "Ссылка 3")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, links)
 
         linksListView.adapter = adapter

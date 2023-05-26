@@ -23,27 +23,24 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="92dp"
                 android:layout_gravity="center"
-                android:text="Создайте аккаунт"
+                android:layout_marginTop="92dp"
+                android:text="Зарегестрируйтесь"
                 android:textColor="@color/white"
                 android:textSize="31dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="238dp"
-                android:layout_height="53dp"
-                android:layout_marginTop="181dp"
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="179dp"
+                android:layout_height="102dp"
                 android:layout_gravity="center"
-                android:text="Зарегестрируйтесь"
-                android:textColor="@color/white"
-                android:textSize="25dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="97dp" />
 
             <EditText
                 android:id="@+id/editText4"
@@ -117,7 +114,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="150dp"
                 android:onClick="back"
-                android:text="Вернуться назад"
+                android:text="Уже есть аккаунт? >Авторизируйтесь"
                 android:textColor="@color/white"
                 android:textSize="17dp" />
         </LinearLayout>
