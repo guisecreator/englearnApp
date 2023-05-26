@@ -8,7 +8,7 @@ class OtherActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.pronouns)
+        setContentView(R.layout.alphabet)
 
         val selectedLink = intent.getStringExtra("selectedLink")
         val linkTextView = findViewById<TextView>(R.id.selectedLinkTextView)

@@ -14,7 +14,7 @@ class LessonActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lesson)
 
         val linksListView: ListView = findViewById(R.id.listViewTopics)
-        val links = arrayOf("Местоимения", "Глаголы", "Ссылка 3")
+        val links = arrayOf("Алфавит", "#", "#", "#")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, links)
 
         linksListView.adapter = adapter
