@@ -49,9 +49,4 @@ class SigninActivity : AppCompatActivity() {
         }
     }
 
-    fun next2(view: View) {
-        val intent = Intent(this@SigninActivity, RecoveryActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
 }

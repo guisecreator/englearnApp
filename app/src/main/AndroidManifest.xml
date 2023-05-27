@@ -12,22 +12,20 @@
         android:theme="@style/Theme.English_learning_app"
         tools:targetApi="31">
         <activity
-            android:name=".LessonActivity"
+            android:name=".LoadingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LessonActivity"/>
         <activity android:name=".OtherActivity" />
-        <activity android:name=".TopicDetailsActivity" />
+      <activity android:name=".QuizActivity2"/>
         <activity android:name=".SigninActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".MainDisplayActivity" />
-
-        <activity android:name=".RecoveryActivity" />
-        <activity android:name=".RecoveryOkActivity" />
         <activity android:name=".SignupActivity" />
     </application>
 </manifest>

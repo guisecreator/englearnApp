@@ -62,7 +62,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     fun back(view: View) {
-        val intent = Intent(this@SignupActivity, MainDisplayActivity::class.java)
+        val intent = Intent(this@SignupActivity, SigninActivity::class.java)
         startActivity(intent)
         finish()
     }

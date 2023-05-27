@@ -47,6 +47,7 @@
                 android:background="@drawable/edittextstyle2"
                 android:drawableStart="@drawable/person_white"
                 android:drawablePadding="19dp"
+                android:inputType="textEmailAddress"
                 android:ems="10"
                 android:hint="Логин"
                 android:layout_gravity="center"

@@ -22,16 +22,15 @@ class LessonActivity : AppCompatActivity() {
         linksListView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             val selectedLink = links[position]
 
-            //todo: сделать линки для каждой страницы
             val intent = Intent(this, OtherActivity::class.java)
             intent.putExtra("selectedLink", selectedLink)
             startActivity(intent)
         }
 
     }
-    fun send(view: View) {
-        val intent = Intent(this@LessonActivity, QuizActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
+//    fun send(view: View) {
+//        val intent = Intent(this@LessonActivity, QuizActivity::class.java)
+//        startActivity(intent)
+//        finish()
+//    }
 }
